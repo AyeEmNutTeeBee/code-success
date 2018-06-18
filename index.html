@@ -2,9 +2,40 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <title>Error</title>
+
+        <style>
+            body {
+                background-color: black;
+            }
+
+            .error_wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                flex-direction: column;
+                color: red;
+            }
+
+            .error_wrapper > .error_heading {
+                margin-bottom: 42px;
+                font-family: 'Roboto Mono', monospace;
+            }
+
+            img {
+                width: 50%;
+            }
+        </style>
     </head>
     <body>
-        <h1>YAAAYY!!!</h1>
+    <div class="error_wrapper">
+        <div class="error_heading">
+            <h2>Error detected... page is unavailable to date. Request alternative?</h2>
+        </div>
+
+       <img src="inikkinHomeland.png" alt="Image not available to date" >
+    </div>
     </body>
 </html>
