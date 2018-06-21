@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Character Limit</title>
+    </head>
+    <body>
+        <input type="text" class="msgInput">
+
+        <div>
+            Characters left <span class="msgCounter"></span>
+        </div>
+          
+        <hr>
+          
+        <input type="text" class="tags">
+          
+        <div>
+            Characters left <span class="tagsCounter"></span>
+        </div>
+
+        <hr>
+
+        <input type="text" id="searchBar">
+    </body>
+
+    <script>
+  const msgInput = document.querySelector('.msgInput');
+  const msgCounter = document.querySelector('.msgCounter');
+  const tagsInput = document.querySelector('.tags');
+  const tagsCounter = document.querySelector('.tagsCounter');
+
+        
+        const textFieldLengthValidator = (textField, counter, maxCount) => {
+    textField.onkeyup = function() {
+        counter.innerHTML = maxCount - this.value.length;
+
+        if(!getCurrentContentLength(this.value, (maxCount - 1))) {
+            textField.disabled = true;
+        }
+    }
+  }
+
+  textFieldLengthValidator(msgInput, msgCounter, 144);
+  textFieldLengthValidator(tagsInput, tagsCounter, 42);
+
+    const hotKeys = (e) => {
+        let windowEvent = window.event ? event : e;
+            if (windowEvent.keyCode == 66 && windowEvent.ctrlKey) {
+                const searchBar = document.querySelector('#searchBar');
+                searchBar.focus();
+            }
+        }
+        document.onkeydown = hotKeys;
+    </script>
+</html>
