@@ -1,0 +1,114 @@
+html {
+    background: url('../images/1.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.button {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: purple;
+    color: white;
+    padding: 10px 24px 10px 24px;
+    max-width: 30px;
+    border: 1px solid transparent;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.button:hover {
+    border: 1px solid white;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1.2em;
+}
+
+#left-nav-buttons {
+    float: left;
+    margin-left: 205px;
+}
+
+#right-nav-buttons {
+    margin-left: 805px;
+    font-size: 0.8em;
+}
+
+#container {
+    margin: auto;
+    width: 1300px;
+}
+  
+#logo img {
+    width: 150px;
+    float: left;
+    position: relative;
+}
+
+#content {
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+#content #banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+#content #marketing-content {
+    margin-top: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#line-1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+  
+#line-2 {
+    font-size: 0.9em;
+}
+
+#buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#buttons a {
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 1300px;
+    height: 30px;
+    text-align: center;
+}
+
+#flag {
+    width: 20px;
+    margin-bottom: -5px;
+}
